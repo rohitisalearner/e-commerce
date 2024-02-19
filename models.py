@@ -12,3 +12,27 @@ class topWear(db.Model):
     categoryImage = db.column(db.LargeBinary(length=16777215))
     categoryListPrice = db.column(db.Integer)
     categoryMrpPrice = db.column(db.Integer)
+
+
+class bottomWear(db.Model):
+    __tablename__ = 'bottomWear'
+
+    id = db.column(db.Integer, primary_key=True)
+    categoryName = db.column(db.String(100), unique = True)
+    categoryTitle = db.column(db.String(200))
+    categoryDescription = db.column(db.String(1000))
+    categoryImage = db.column(db.LargeBinary(length=16777215))
+    categoryListPrice = db.column(db.Integer)
+    categoryMrpPrice = db.column(db.Integer)
+
+
+class footWear(db.Model):
+    __tablename__ = 'footWear'
+
+    id = db.column(db.Integer, primary_key=True)
+    categoryName = db.column(db.String(100), unique = True)
+    categoryTitle = db.column(db.String(200))
+    categoryDescription = db.column(db.String(1000))
+    categoryImage = db.column(db.LargeBinary(length=16777215))
+    categoryListPrice = db.column(db.Integer)
+    categoryMrpPrice = db.column(db.Integer)
